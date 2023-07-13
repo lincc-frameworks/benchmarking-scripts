@@ -9,7 +9,7 @@ class MetricsProcessor:
     """Extracts metrics from the benchmarking JSON files and submits them to Sasquatch"""
 
     def __init__(self):
-        self.benchmarks_filepath = "../benchmarks/output.json"
+        self.benchmarks_filepath = "benchmarks/output.json"
 
         # These are passed as environment variables from the GitHub action
         self.sasquatch_rest_proxy_url = os.environ["KAFKA_API_URL"]
