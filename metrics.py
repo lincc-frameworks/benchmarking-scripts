@@ -8,7 +8,7 @@ import requests
 class MetricsProcessor:
     """Extracts metrics from the benchmarking JSON files and submits them to Sasquatch"""
 
-    BENCHMARKS_FILEPATH = "output.json"
+    BENCHMARKS_FILEPATH = "benchmarks/output.json"
     SASQUATCH_NAMESPACE = "lsst.lf"
 
     # Passed as environment variables from the GitHub action
